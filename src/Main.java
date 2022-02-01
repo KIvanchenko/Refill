@@ -1,21 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-       //Данные:
+        //Данные:
         int balance = 1605;
         int refill = 6000;
-        int sum_bonus = refill / 100;
-
-
+        int sumBonus = refill / 100;
 
 
         //Логика:
 
         int total;
-        if (refill >=1000) { total= balance + refill + sum_bonus; }
-        else { total = balance + refill; }
+        if (refill >= 1000) {
+            total = balance + refill + sumBonus;
+        } else {
+            total = balance + refill;
+        }
 
         System.out.println("Ваш Баланс = " + total + " руб.");
-        System.out.println("Бонус составил = " + sum_bonus + " руб.");
+        System.out.println("Бонус составил = " + sumBonus + " руб.");
 
 
 
